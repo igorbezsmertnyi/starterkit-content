@@ -10,10 +10,11 @@ import { routing } from './app.routing';
 //Services
 import { StateService } from './states.service';
 import { StoreService } from './store.service';
+import { AppComponent } from './app/app.component';
 
 @NgModule({
   declarations: [
-
+    AppComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +34,6 @@ import { StoreService } from './store.service';
     StateService,
     StoreService
    ],
-  bootstrap: [  ]
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }

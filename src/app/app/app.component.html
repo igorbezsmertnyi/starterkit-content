@@ -1,0 +1,14 @@
+<div class="app-container">
+  <div class="app-container__bg"></div>
+  <div class="app-container__logo-container">
+    <div class="app-container__logo-container__logo"
+      [ngStyle]="{'transform': 'translate('+client.x+'px,'+client.y+'px)'}"></div>
+    <div class="app-container__logo-container__title"
+      [ngStyle]="{'transform': 'translate('+-client.x+'px,'+-client.y+'px)'}">
+      <h3>Angular 2 Rails</h3>
+      <p>
+        Strarterkit
+      </p>
+    </div>
+  </div>
+</div>
