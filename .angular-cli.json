@@ -1,12 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "name": "app_name"
+    "name": "client-app"
   },
   "apps": [
     {
-      "root": "./client/src",
-      "outDir": "./public",
+      "root": "src",
+      "outDir": "../public",
       "assets": [
         "assets",
         "favicon.ico"
@@ -31,23 +31,23 @@
   ],
   "e2e": {
     "protractor": {
-      "config": "./client/protractor.conf.js"
+      "config": "./protractor.conf.js"
     }
   },
   "lint": [
     {
-      "project": "./client/src/tsconfig.app.json"
+      "project": "src/tsconfig.app.json"
     },
     {
-      "project": "./client/src/tsconfig.spec.json"
+      "project": "src/tsconfig.spec.json"
     },
     {
-      "project": "./client/e2e/tsconfig.e2e.json"
+      "project": "e2e/tsconfig.e2e.json"
     }
   ],
   "test": {
     "karma": {
-      "config": "./client/karma.conf.js"
+      "config": "./karma.conf.js"
     }
   },
   "defaults": {
